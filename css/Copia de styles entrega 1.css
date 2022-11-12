@@ -1,0 +1,118 @@
+/* Probando estilos */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(173, 172, 171);
+}
+
+
+
+/* agregando color y estilo al header */
+header {
+    background-color: rgb(30, 27, 27);
+    text-align:center;
+    color: blanchedalmond;
+    padding-top: 2rem;
+}
+
+.menuPrincipal {
+    background-color: rgb(30, 27, 27);
+    text-align:center;
+    color: blanchedalmond;
+    padding-top: .1px;
+    padding-bottom: 1rem;
+    
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+nav {
+    margin-top: 3rem;
+
+}
+
+/* Probando asignar Clases */
+.menuPrincipal li {
+    display: inline;
+    margin-right: 10rem;
+    font-size: 2rem;
+    background-color:gray ;
+} /* cambiar por flexbox siguiente entrega*/
+
+.portada {
+    font-size: 1.5rem;
+    width: 30rem;
+}
+
+.portadaGrande {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.formularioContacto {
+    color: aliceblue;
+    text-align:left;
+    margin-top: 2rem;
+    width: fit-content;
+    text-align: left;
+}
+
+a {
+    text-decoration:none;
+    color:aliceblue;
+}
+
+.card__producto {
+    margin-bottom: 3rem;
+}
+
+.boton {
+    padding: .4rem;
+}
+
+
+section .portada {
+    display: inline;
+}
+
+.sucursales {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.mapa {
+    margin-top: 2rem;
+}
+
+.productos{
+    font-size: 1.5rem;
+}
+
+.galeria {
+    font-size: 3rem;
+    margin-bottom: 3Rem;
+
+}
+
+footer {
+    font-size: 1.5rem;
+    background-color: black;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
