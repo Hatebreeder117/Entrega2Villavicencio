@@ -163,33 +163,54 @@ p {
     transition:ease-in-out 1s;
     transition: heigth 2s, width 3s;
     height: 3rem;
-
-
 }
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-} 
-@media screen and (max-width: 767px) {
-    #productos {
-        flex-direction: column;
-    } */
 
-} 
-
-
-
-    /* display: grid;
+#galeria {
+    display: grid;
     grid-template-areas:
-    "inicio inicio inicio inicio"
-    "productos productos productos productos"
-    "productos productos productos productos"
-    ;
-    grid-template-columns: repeat(4, 1fr);
+    "iniciogal iniciogal"
+    "galprod galserv"
+    "galimg servimg";
 
-    max-width: 100%; */
+    grid-template-columns:repeat(2, 1fr);
+    max-width: 100%;
+    grid-column-gap: 20px;
+}
 
-/* #card__producto {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    
-} */
+@media screen and (max-width: 479px) {
+    #galeria {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.iniciogal {
+    grid-area: iniciogal;
+}
+
+.galprod {
+    grid-area: galprod;
+}
+
+.galimg {
+    grid-area: galimg;
+    /* max-width: 460px;
+    max-height: 328px; */
+}
+
+.galserv {
+    grid-area: galserv;
+}
+
+.servimg {
+    grid-area: servimg;
+    /* max-width: 460px;
+    max-height: 328px; */
+}
+
+#galeria {
+    text-align: center;
+    justify-content:space-around;
+    padding: 1rem;
+    margin-bottom: 3rem;    
+}
