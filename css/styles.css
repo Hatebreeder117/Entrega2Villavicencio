@@ -25,7 +25,6 @@ header {
     margin-bottom: 2rem;
     min-height: 5rem;
     max-height: 17rem;
-
 }
 
 .navMenu {
@@ -42,6 +41,7 @@ header {
     .navMenu {
         flex-direction: column;
         align-items: center;
+        gap: 5px;
     }
 }
 
@@ -65,7 +65,7 @@ p {
 
 }
 /* grid de index */
-#mainPrincipal {
+.mainPrincipal {
     display: grid;
     grid-template-areas:
     "inicio inicio"
@@ -77,47 +77,51 @@ p {
     max-width: 100%
 }
 
+.mainPrincipal {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 @media screen and (max-width: 767px) {
-    #mainPrincipal {
+    .mainPrincipal {
         display: flex;
         flex-direction: column;
     }
 }
 
-
-#h1 {
+.h1 {
     grid-area: inicio;
     padding-bottom: 2rem;
 }
 
-#imgPrincipal {
+.imgPrincipal {
     grid-area: img;
     display: flex;
-    margin: 2rem 3rem 2rem 6rem;
 }
 
-#textoPrincipal1 {
+.textoPrincipal1 {
     grid-area: texto;
     padding-top: 2rem;
 }
 
-#textoPrincipal2 {
+.textoPrincipal2 {
     grid-area: texto;
 }
 
-#rrss {
+.rrss {
     grid-area: rrss;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
 }   
 
 .instagram {
     padding: 0rem 3rem 0rem 3rem;
 }
 
-
 /* grid de productos */
-
-#productos {
+.productos {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
@@ -125,7 +129,7 @@ p {
 }
 
 .card__producto {
-    width: 1fr;
+    /* width: 1fr; */
     border: solid 1px gray;
     display: flex;
     flex-direction: column;
@@ -135,7 +139,6 @@ p {
     margin-right: 2rem;
 }
 
-
 @media screen and (max-width: 767px) {
     #productos {
         display: grid;
@@ -143,7 +146,7 @@ p {
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 576px) {
     #productos {
         display: flex;
         flex-direction: column;
@@ -165,7 +168,7 @@ p {
     height: 3rem;
 }
 
-#galeria {
+.galeria {
     display: grid;
     grid-template-areas:
     "iniciogal iniciogal"
@@ -177,10 +180,19 @@ p {
     grid-column-gap: 20px;
 }
 
-@media screen and (max-width: 479px) {
-    #galeria {
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width: 576px) {
+    .galeria {
+        display: grid;
+        grid-template-areas:
+        "iniciogal" 
+        "galprod" 
+        "galimg"        
+        "galserv"
+        "servimg";
+
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 15px;
     }
 }
 
@@ -208,9 +220,28 @@ p {
     max-height: 328px; */
 }
 
-#galeria {
+.galeria {
     text-align: center;
     justify-content:space-around;
     padding: 1rem;
     margin-bottom: 3rem;    
+}
+
+.formulario {
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 3rem;
+    min-height: 4rem;
 }
