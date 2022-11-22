@@ -39,6 +39,7 @@ header {
     padding-bottom: 1rem;
     font-size: 3rem;
     list-style: none;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -72,7 +73,6 @@ p {
 .mainPrincipal {
     display: grid;
     grid-template-areas:
-    "inicio inicio"
     "texto img"
     "texto img"
     "rrss rrss";
@@ -95,11 +95,6 @@ p {
     .imgPrincipal {
         margin-top: 2rem;
     }
-}
-
-.iniciomain {
-    grid-area: inicio;
-
 }
 
 .imgPrincipal {
@@ -148,14 +143,14 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-    #productos {
+    .productos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 576px) {
-    #productos {
+    .productos {
         display: flex;
         flex-direction: column;
     }
