@@ -87,6 +87,10 @@ p {
         display: flex;
         flex-direction: column;
     }
+
+    .imgPrincipal {
+        margin-top: 2rem;
+    }
 }
 
 .h1 {
@@ -220,17 +224,21 @@ p {
 
 .galeria {
     text-align: center;
-    justify-content:space-around;
-    padding: 1rem;
-    margin-bottom: 3rem;    
+    justify-content:space-around;   
 }
 
-.formulario {
+fieldset {
     font-size: medium;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90vw;
+}
+
+.sucursales {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
 }
 
 footer {
