@@ -19,6 +19,10 @@ header {
     background-color: black;
 }
 
+.mapa {
+    max-width: 100%;
+}
+
 .imgLander {
     justify-items: center;
     margin-top: 2rem;
@@ -57,7 +61,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 p {
@@ -93,9 +97,9 @@ p {
     }
 }
 
-.h1 {
+.iniciomain {
     grid-area: inicio;
-    padding-bottom: 2rem;
+
 }
 
 .imgPrincipal {
