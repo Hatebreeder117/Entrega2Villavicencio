@@ -34,7 +34,7 @@ header {
 .navMenu {
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color: #000000;
     padding-top: .1rem;
     padding-bottom: 1rem;
     font-size: 3rem;
@@ -138,10 +138,26 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem;
+    padding: 0rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
+.card__producto img {
+    max-width: 100%;
+}
+
+.card { /*prueba card con bootstrap*/
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+
 
 @media screen and (max-width: 767px) {
     .productos {
@@ -164,6 +180,11 @@ p {
     width: auto;
 }
 
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
 
 .galeria {
     display: grid;
