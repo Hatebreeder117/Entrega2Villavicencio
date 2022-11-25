@@ -1,0 +1,52 @@
+.mainPrincipal {
+    display: grid;
+    grid-template-areas:
+    "texto img"
+    "texto img"
+    "rrss rrss";
+
+    grid-template-columns:repeat(2, 1fr);
+    max-width: 100%
+}
+
+.mainPrincipal {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: $mq-med-g) {
+    .mainPrincipal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgPrincipal {
+        margin-top: 2rem;
+    }
+}
+
+.imgPrincipal {
+    grid-area: img;
+    display: flex;
+}
+
+.textoPrincipal1 {
+    grid-area: texto;
+    padding-top: 2rem;
+}
+
+.textoPrincipal2 {
+    grid-area: texto;
+}
+
+.rrss {
+    grid-area: rrss;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}   
+
+.instagram {
+    padding: 0rem 3rem 0rem 3rem;
+}

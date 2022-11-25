@@ -1,0 +1,62 @@
+.galeria {
+    display: grid;
+    grid-template-areas:
+    "iniciogal iniciogal"
+    "galprod galserv"
+    "galimg servimg";
+
+    grid-template-columns:repeat(2, 1fr);
+    max-width: 100%;
+    grid-column-gap: 20px;
+
+    text-align: center;
+    justify-content:space-around;   
+
+    img {
+        max-width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .galeria {
+        display: grid;
+        grid-template-areas:
+        "iniciogal" 
+        "galprod" 
+        "galimg"        
+        "galserv"
+        "servimg";
+
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 15px;
+
+    }
+}
+
+.iniciogal {
+    grid-area: iniciogal;
+}
+
+.galprod {
+    grid-area: galprod;
+}
+
+.galimg {
+    grid-area: galimg;
+}
+
+.galserv {
+    grid-area: galserv;
+}
+
+.servimg {
+    grid-area: servimg;
+}
+
+// .galeria {
+//     text-align: center;
+//     justify-content:space-around;   
+// }

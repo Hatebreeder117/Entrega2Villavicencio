@@ -1,0 +1,41 @@
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    gap: 3rem;
+
+    
+}
+
+.card__producto {
+    border: solid 1px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    img { 
+        max-width: 100%;
+    }
+}
+
+.card { 
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .productos {
+        display: flex;
+        flex-direction: column;
+    }
+}
