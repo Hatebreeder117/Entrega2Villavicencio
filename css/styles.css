@@ -1,5 +1,6 @@
 /* variables de colores y fuentes */
 /* variables de MQ */
+/* Fuentes */
 .mainPrincipal {
   display: grid;
   grid-template-areas: "texto img" "texto img" "rrss rrss";
@@ -204,6 +205,7 @@ h1 {
   text-align: center;
   padding-top: 2.5rem;
   font-size: 3rem;
+  font-family: "Rubik Microbe", cursive;
 }
 
 h2 {
@@ -212,6 +214,7 @@ h2 {
 
 p {
   font-size: 2rem;
+  font-family: "Rubik Microbe", cursive;
 }
 
 footer {
