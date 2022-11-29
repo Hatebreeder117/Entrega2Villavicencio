@@ -1,4 +1,5 @@
 @import "variables";
+@import "main";
 @import "index";
 @import "productos";
 @import "contacto";
@@ -17,46 +18,6 @@ html {
 
 img {
     max-width: 100%;
-}
-
-header {
-    text-align: center;
-    background-color: black;
-}
-
-.imgLander {
-    justify-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    min-height: 5rem;
-    max-height: 17rem;
-}
-
-.navMenu {
-    display: flex;
-    justify-content: space-around;
-    background-color: #000000;
-    padding-top: .1rem;
-    padding-bottom: 1rem;
-    font-size: 3rem;
-    list-style: none;
-    text-decoration: none;
-
-    li {
-        margin-bottom: 2rem;
-        transition:ease-in 2s;
-        height: 3rem;
-        width: auto;
-    }
-    
-}
-
-@media screen and (max-width: $mq-med-g) {
-    .navMenu {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
 }
 
 a {

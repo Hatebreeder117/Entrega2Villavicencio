@@ -1,6 +1,43 @@
 /* variables de colores y fuentes */
 /* variables de MQ */
 /* Fuentes */
+header {
+  text-align: center;
+  background-color: black;
+}
+
+.imgLander {
+  justify-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  min-height: 5rem;
+  max-height: 17rem;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000;
+  padding-top: 0.1rem;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  list-style: none;
+  text-decoration: none;
+}
+.navMenu li {
+  margin-bottom: 2rem;
+  transition: ease-in 2s;
+  height: 3rem;
+  width: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .navMenu {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
 .mainPrincipal {
   display: grid;
   grid-template-areas: "texto img" "texto img" "rrss rrss";
@@ -159,43 +196,6 @@ img {
   max-width: 100%;
 }
 
-header {
-  text-align: center;
-  background-color: black;
-}
-
-.imgLander {
-  justify-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  min-height: 5rem;
-  max-height: 17rem;
-}
-
-.navMenu {
-  display: flex;
-  justify-content: space-around;
-  background-color: #000000;
-  padding-top: 0.1rem;
-  padding-bottom: 1rem;
-  font-size: 3rem;
-  list-style: none;
-  text-decoration: none;
-}
-.navMenu li {
-  margin-bottom: 2rem;
-  transition: ease-in 2s;
-  height: 3rem;
-  width: auto;
-}
-
-@media screen and (max-width: 767px) {
-  .navMenu {
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-  }
-}
 a {
   color: aliceblue;
   text-decoration: none;
@@ -205,7 +205,7 @@ h1 {
   text-align: center;
   padding-top: 2.5rem;
   font-size: 3rem;
-  font-family: "Rubik Microbe", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 h2 {
@@ -214,7 +214,7 @@ h2 {
 
 p {
   font-size: 2rem;
-  font-family: "Rubik Microbe", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 footer {
