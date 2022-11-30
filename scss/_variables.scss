@@ -7,3 +7,26 @@ $mq-sm: 576px;
 
 /* Fuentes */
 $fuentetitulos: 'Roboto', sans-serif;
+
+/* Colores */
+.colorblancogeneral {
+    color: aliceblue;
+}
+
+/* Extend */
+.margenesLR1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Mixing */
+@mixin flex-column-centrado {
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin margenesLR1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}

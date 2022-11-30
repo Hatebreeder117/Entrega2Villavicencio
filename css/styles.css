@@ -1,6 +1,53 @@
 /* variables de colores y fuentes */
 /* variables de MQ */
 /* Fuentes */
+/* Colores */
+.colorblancogeneral {
+  color: aliceblue;
+}
+
+/* Extend */
+.margenesLR1, .mainPrincipal {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Mixing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 2.5rem;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   text-align: center;
   background-color: black;
@@ -12,6 +59,17 @@ header {
   margin-bottom: 2rem;
   min-height: 5rem;
   max-height: 17rem;
+}
+
+footer {
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 3rem;
+  min-height: 4rem;
 }
 
 .navMenu {
@@ -43,11 +101,6 @@ header {
   grid-template-areas: "texto img" "texto img" "rrss rrss";
   grid-template-columns: repeat(2, 1fr);
   max-width: 100%;
-}
-
-.mainPrincipal {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -180,52 +233,6 @@ fieldset {
 
 .mapa {
   max-width: 100%;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  color: aliceblue;
-  text-decoration: none;
-}
-
-h1 {
-  text-align: center;
-  padding-top: 2.5rem;
-  font-size: 3rem;
-  font-family: "Roboto", sans-serif;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-p {
-  font-size: 2rem;
-  font-family: "Roboto", sans-serif;
-}
-
-footer {
-  background-color: black;
-  color: aliceblue;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  font-size: 15px;
-  margin-top: 3rem;
-  min-height: 4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
