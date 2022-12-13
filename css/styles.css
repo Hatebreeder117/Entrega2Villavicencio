@@ -146,7 +146,6 @@ footer {
 }
 
 .card__producto {
-  border: solid 1px gray;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,11 +155,6 @@ footer {
 }
 .card__producto img {
   max-width: 100%;
-}
-
-.card {
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -175,12 +169,6 @@ footer {
     flex-direction: column;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .formulario {
   background-size: 14px 14px;
   background-position: 0 0, 7px 7px;
@@ -189,7 +177,7 @@ footer {
 }
 
 .form {
-  background-color: #e5e5f7;
+  background-color: rgb(242, 239, 239);
   margin: auto;
   width: 90%;
   max-width: 400px;
@@ -267,46 +255,18 @@ footer {
   transform: scale(1);
 }
 
-.galeria {
-  display: grid;
-  grid-template-areas: "iniciogal iniciogal" "galprod galserv" "galimg servimg";
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 100%;
-  grid-column-gap: 20px;
-  text-align: center;
-  justify-content: space-around;
-}
-.galeria img {
-  max-width: 100%;
-}
-
-@media screen and (max-width: 576px) {
-  .galeria {
-    display: grid;
-    grid-template-areas: "iniciogal" "galprod" "galimg" "galserv" "servimg";
-    grid-template-columns: 1fr;
-    max-width: 100%;
-    gap: 15px;
-  }
-}
-.iniciogal {
-  grid-area: iniciogal;
-}
-
-.galprod {
-  grid-area: galprod;
+.col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
 }
 
 .galimg {
-  grid-area: galimg;
+  width: 100%;
+  height: 250px;
 }
 
-.galserv {
-  grid-area: galserv;
-}
-
-.servimg {
-  grid-area: servimg;
+.galimg:hover {
+  border: 5px solid #f7f7f7;
 }
 
 .sucursales {
